@@ -19,7 +19,7 @@ show_menu() {
 
     # --- Format tasks for Rofi ---
     formatted_pending=$(echo "$pending_tasks" | sed 's/^\([0-9]*\):\(.*\)/\2 (\1)/')
-    formatted_completed=$(echo "$completed_tasks" | sed "s/^\([0-9]*\):\(.*\)/<span color='#888888' strikethrough='true'>\2<\/span> (\1)/")
+    formatted_completed=$(echo "$completed_tasks" | sed "s/^\([0-9]*\):\(.*\)/<span color='#606079' strikethrough='true'>\2<\/span> (\1)/")
     
     separator=""
     if [ -n "$formatted_pending" ] && [ -n "$formatted_completed" ]; then
